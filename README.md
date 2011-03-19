@@ -2,6 +2,7 @@
 
 This Vim plugin implements interactive Ruby debugger in Vim.
 
+This fork groups all mappings under **&lt;Leader&gt;d** to avoid conflicts with other plugins (like command-t).
 
 # Features #
 
@@ -64,17 +65,17 @@ I've tested the plugin in Windows and Linux. All tests should be passed there.
 
     It will kill any listeners of ports 39767 and 39768 and run rdebug-ide and ~/.vim/bin/ruby_debugger.rb on these ports accordingly.
 
-3.  Set breakpoint somewhere by **&lt;Leader&gt;b** (e.g., '\b'). You should see 'xx' symbol at current line.
+3.  Set breakpoint somewhere by **&lt;Leader&gt;db** (e.g., '\db'). You should see 'xx' symbol at current line.
 
 4.  Open page with the breakpoint in the browser. Vim should automatically set current line to breakpoint.
 
 5.  After this, you can use commands:
 
-         <Leader>b - set breakpoint at current line
-         <Leader>v - open/close window with variables. You can expand/collapse variables by 'o' in normal mode or left-mouse double-click
-         <Leader>n - step over
-         <Leader>s - step into
-         <Leader>c - continue
+         <Leader>db - set breakpoint at current line
+         <Leader>dv - open/close window with variables. You can expand/collapse variables by 'o' in normal mode or left-mouse double-click
+         <Leader>dn - step over
+         <Leader>ds - step into
+         <Leader>dc - continue
 
 
 # Testing #
